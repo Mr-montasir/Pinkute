@@ -1,0 +1,16 @@
+@media (max-width :1000px) {
+
+    .hero {
+        flex-direction: column;
+        width:80%;
+        height: auto;
+        gap: 50px;
+        top: 20px; 
+    }
+    .hero .image{
+        width: 100%; 
+    }
+    .hero .text{
+        width: 100%; 
+    }
+}

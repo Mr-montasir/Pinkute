@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+}
+:root {
+    --main-color:#FC28FB;
+    --secondary-color:#ffa6f8;
+    --third-color:#FBCAFF;
+    --fourth-color:#FDEBF7;
+}
+
+::selection {
+    background: var(--main-color);
+    color: white;
+}
+
+/* usefull classes */
+.pink{
+    color: var(--main-color);
+}
+
+ 
+/* navigation goes here */
+header { 
+    display: flex;
+    position: relative;
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 0 5% ; 
+    border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: white;
+    min-height: 80px;
+    max-height: 80px;
+    z-index: 10;
+}
+header .bar-socialmedia{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header .social-media{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .social-media i{
+    position: relative;
+    cursor: pointer; 
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.35);
+    transition: .2s;
+} 
+header .social-media i:hover{ 
+    color: var(--main-color);
+} 
+header .logo {  
+    width: fit-content;
+    height: 55px;  
+    left: 0;
+} 
+header .logo img {   
+    height: 100%; 
+    object-fit: cover;
+}
+header .nav-bar .bar{ 
+   font-size: 40px;
+   cursor: pointer;
+} 
+header nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh; 
+    min-width: 250px;
+    background:var(--main-color) ;
+    padding-left: 20px;
+    padding-top: 50px; 
+    border-bottom-left-radius: 20px;
+    transition: .3s; 
+    opacity: 0;
+}
+header nav .close-back{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    top: 4px; 
+    left: 100%;
+    transform: translateX(calc(-100% - 4px) );
+    height: 40px;
+    background: white;
+    width: calc(100% - 8px); 
+    cursor: pointer;
+}
+header nav .close-back i{
+    padding-right: 20px;
+    font-size: 25px;
+    transition: .1s;
+}
+header nav .close-back:hover i{
+    padding-right: 10px;
+    color: var(--main-color);
+}
+header nav h1 {
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+    text-align: right;
+}
+header nav ul { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0; 
+    padding-right: 20px;
+    white-space: nowrap;
+    text-align: right;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);  
+}
+header nav ul a { 
+    color: white;
+    width: 90%;
+    margin-left:   auto;
+    padding: 0 10px ;
+    border-radius: 5px;
+    transition: .1s;
+}
+header nav ul a:hover { 
+    background: white;
+    color: var(--main-color);
+}
+header nav ul a i { 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+header nav .languages {
+    color: white;
+    border: none;
+    background-color:rgba(255, 255, 255 , .25) ;
+    position: relative;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+} 
+header nav .languages .current {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+header nav .languages .container{
+    display: none;
+    width: 100%;
+    margin-top: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 7px; 
+    padding: 5px;
+    overflow: hidden;
+    background: white;
+    z-index: 20;
+} 
+header nav .languages .container.display {
+    display: block;
+}
+header nav .languages .container a{  
+    padding:0 ; 
+} 
+header nav .languages .container .language{
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    margin: 0 auto;
+    padding:5px 5px;
+    color: gray;
+    transition: .2s;
+    background: white; 
+    display: flex; 
+    align-items: center;
+    gap: 5px;
+} 
+header nav .languages .container .language:hover{
+    color:black ;
+    background: rgb(230, 230, 230); 
+} 
+header nav .languages .container .language .flag-box{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 50%;   
+    overflow: hidden;
+} 
+header nav .languages .container .language .flag-box img{
+    height:100%;
+    width: 100%; 
+    position: relative;
+    object-fit: cover; 
+} 
+
+header nav .nav-social-media{
+    position: relative;
+    top: 20px;
+    gap: 10px;
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+} 
+header nav .nav-social-media i{ 
+    color: var(--main-color);
+    border: 2px solid white; 
+    background: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: .3s;
+    cursor: pointer;
+} 
+header nav .nav-social-media i:hover{ 
+    color: white;
+    border: 2px solid white;
+    background: none;
+    transform: rotate(360deg);
+} 
+/* header ends */
+
+
+
+/* hero starts */
+.hero {
+    position: relative;
+    display: flex;
+    height: 85vh;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+}
+.hero .text{
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    gap: 30px;
+    text-align: right;
+}
+.hero .text p{
+    color: gray;
+}
+.hero .text .button{
+    color: white;
+    background: var(--secondary-color);
+    width: fit-content;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: .2s;
+    cursor: pointer;
+    margin-left: auto;
+}
+.hero .text .button:hover{
+    background: var(--main-color);  
+}
+.hero .image{
+    width: 50%;
+}
+.hero .image img{
+    width:100%;
+}
+
+
+/*///////////////////////////// contact starts /////////////////////*/
+.contact{
+    width: 80%; 
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    grid-template-rows: 250px 250px; 
+    grid-template-areas: 
+    "form info"
+    "form map";
+    margin: 20vh auto;
+    grid-gap: 20px; 
+}
+.contact .form {
+    grid-area: form;
+    height: 100%;
+    width: 100%;   
+}
+.contact .form form{ 
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;  
+}
+.contact .form form .name .first-name, .last-name{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 7px;
+}
+
+.contact .form form .email, .mobile, .message{  
+    display: flex;
+    flex-direction: column;     
+    gap: 7px;
+}  
+.contact .form form .name{ 
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+.contact .form form span.input-title{ 
+    font-weight: 500;
+    color: var(--main-color);
+    font-size: 18px;
+}
+.contact .form form input, textarea{ 
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    transition: .1s;
+}
+.contact .form form input:focus, textarea:focus{  
+    border: 2px solid var(--main-color); 
+}
+.contact .form form input.submit{ 
+    color: var(--main-color);
+    background: none;
+    border: 2px solid var(--main-color);
+    transition: .2s; 
+    cursor: pointer;
+    width: 50%;
+}
+.contact .form form input.submit:hover{ 
+    color: white;
+    background: var(--main-color); 
+}
+
+
+
+
+.contact .info {
+    grid-area: info;
+    height: 100%;
+    width: 100%;
+    background:var(--main-color) ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    flex-direction: column;
+    color: white;
+}
+.contact .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact .informations .information {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+.contact .informations .information {
+    
+}
+.contact .map {
+    grid-area: map;
+    height: 100%;
+    width: 100%; 
+} 
+.contact .map iframe{ 
+    height: 100%;
+    width: 100%; 
+    border-radius: 10px;
+} 
