@@ -1,0 +1,37 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+header nav h1 { 
+    text-align: left;
+}
+header nav ul {  
+    padding:20px 0 ;
+    text-align: left; 
+    left: 0%;
+    transform: translateX(0%);
+    gap: 10px;
+}
+header nav ul a {  
+    padding: 10px 5px; 
+    margin-right: auto;
+    margin-left: 0;
+    width: 80%;
+}
+header nav .languages {
+    padding: 7px 0;
+    margin-left:0px ;
+} 
+header nav .nav-social-media{ 
+    margin-left: 0;
+}  
+
+
+
+.hero .text{ 
+    text-align:left;
+} 
+.hero .text .button{ 
+    margin-left: unset;
+}
