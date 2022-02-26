@@ -1,6 +1,6 @@
 *{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
 }
 
 header nav h1 { 
@@ -26,12 +26,189 @@ header nav .languages {
 header nav .nav-social-media{ 
     margin-left: 0;
 }  
-
-
+/* hero */
 
 .hero .text{ 
     text-align:left;
 } 
 .hero .text .button{ 
     margin-left: unset;
+}
+/* hero ends */
+
+
+/* video section starts */
+.video-section {    
+    text-align: left; 
+} 
+.video-section .text{ 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.video-section .text h1{
+    margin-left: unset;
+} 
+
+/* video section ends */
+
+
+/* testinnonials starts */
+.why-french .reason-container .reasons .reason{
+    text-align: left;
+}
+.why-french .reason-container .reasons .reason .text a{ 
+    margin-left: unset; 
+}
+
+/* services starts */  
+
+/* reserve now */
+
+.reserve {
+    text-align: left;
+    flex-direction: unset;
+}
+.reserve .text p{
+    line-height: 2;
+}
+.reserve .text .button{
+    margin-left: unset;
+}
+.reserve .text .button:hover{
+    background: rgba(255, 209, 243, 0.75);
+}
+.reserve form{ 
+    gap: 20px; 
+}
+.reserve form .name .first-name, .last-name{  
+    text-align: left;
+}     
+.reserve form textarea{
+    text-align: left;
+} 
+.reserve form textarea::placeholder{
+    text-align: left;
+} 
+.reserve form input.submit{  
+    margin-left: unset; 
+}
+
+.reserve form input.submit:hover{ 
+    color: white;
+    background: var(--main-color); 
+}
+.reserve form .service-name{ 
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.reserve form .service-name select{ 
+    outline: none;
+    border: 2px solid #e9e9e9;
+    padding: 5px;
+}  
+.reserve form .service-name select:focus{ 
+    border: 2px solid var(--main-color);
+}  
+
+/* contact starts */
+.contact{ 
+    text-align: left;
+}
+.contact .form form .name .first-name, .last-name{ 
+    text-align: left;
+}
+.contact .form form textarea, .name input{
+    text-align: left;
+}  
+.contact .info { 
+    text-align: left;
+}
+.contact .informations .information { 
+    margin-left: unset;
+}
+.contact .social-media { 
+    margin-left: unset;
+}
+/*about page */
+.informations-about {
+    text-align: left;
+}
+.our-power h1{   
+    text-align: center;
+    font-size: 40px;  
+}
+
+.about .about-infos p {
+    margin-left: unset;
+}
+.about-infos .benifits{
+    margin-left: unset;
+}
+/*about  page  end*/
+
+
+
+
+
+/* success page*/
+
+.success a{
+    padding:10px 20px ;
+}
+
+
+
+/* footer */
+
+footer .container{    
+    flex-direction: unset; 
+}  
+footer .logo .rights { 
+    text-align: left; 
+} 
+footer .logo {
+    margin-right: auto;
+}
+footer .links{ 
+    margin-right: auto;
+    margin-left:100px;  
+}  
+footer .links .page-links a, .other-links a{ 
+    text-align: left;  
+    font-weight: bold;
+}
+footer .links .page-links, .other-links{  
+    gap: 10px;
+}
+@media (max-width :1000px) {
+    footer .container {
+        flex-direction: column;
+    }
+    footer .links{ 
+        margin-right: 100px;
+        margin-left:auto;  
+    }   
+    footer .logo .rights {
+        margin: 0 auto; 
+    } 
+    footer .container .logo img{
+        margin-left: unset;  
+        transform: unset;
+    }
+    footer .links{ 
+        margin-right: 100%;  
+    }  
+    footer .social-media{
+        margin-left: unset; 
+    }
+    footer .logo {
+        margin-right: 100%;
+    }
+
+        /* reserve starts here */
+        .reserve {
+            flex-direction: column;
+        } 
 }

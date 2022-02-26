@@ -7,10 +7,10 @@
     <title>بينكيوت | خدماتنا</title>
     
     <!-- Css links are here -->
-    <link rel="stylesheet" href="../Assets/main.css">
-    <link rel="stylesheet" href="../Assets/tablet.css">
-    <link rel="stylesheet" href="../Assets/phone.css">
-    <link rel="stylesheet" href="arStyle.css">
+    <link rel="stylesheet" href="../../Assets/main.css">
+    <link rel="stylesheet" href="../../Assets/tablet.css">
+    <link rel="stylesheet" href="../../Assets/phone.css">
+    <link rel="stylesheet" href="../arStyle.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38516d3f67.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 
 
     <!-- web icon  -->
-    <link rel="icon" type="image/x-icon" href="../Assets/Images/small-logo.png">
+    <link rel="icon" type="image/x-icon" href="../../Assets/Images/small-logo.png">
 </head>
 <body>
     
@@ -30,7 +30,7 @@
 
 <!-- header start -->
 <header>
-    <a href="../index.html"><div class="logo"><img src="../Assets/Images/header-logo.png" alt=""></div></a>
+    <a href="../../index.html"><div class="logo"><img src="../../Assets/Images/header-logo.png" alt=""></div></a>
     <div class="bar-socialmedia">
         <div class="social-media">
             <a href="https://bit.ly/3pe0sx4"><i class="fa-brands fa-whatsapp"></i></a>
@@ -47,10 +47,10 @@
         <div class="close-back"><i class="fas fa-arrow-right"></i></div>
         <h1>القائمة</h1>
         <ul>
-            <a href="../index.html">الرئيسية <i class="fa-solid fa-house"></i></a>
-            <a href="About.html">حول<i class="fa-solid fa-circle-info"></i></a>
-            <a href="Contact.html">تواصل<i class="fa-solid fa-phone-flip"></i></a>
-            <a href="Services.html">خدمات<i class="fa-solid fa-scissors"></i></a>
+            <a href="../../index.html">الرئيسية <i class="fa-solid fa-house"></i></a>
+            <a href="../About.html">حول<i class="fa-solid fa-circle-info"></i></a>
+            <a href="../Contact.html">تواصل<i class="fa-solid fa-phone-flip"></i></a>
+            <a href="../Services.html">خدمات<i class="fa-solid fa-scissors"></i></a>
         </ul>
         <div class="languages">
             <div class="current"><span>Arabic</span><i class="fa-solid fa-arrow-down"></i></div>
@@ -58,15 +58,15 @@
                <a href="../index.html">
                 <div class="language french">
                     <div class="flag-box">
-                        <img src="../Assets/Images/arabic-flag.png">
+                        <img src="../../Assets/Images/arabic-flag.png">
                     </div>
                     <span>Arabic</span>
                 </div>
                </a> 
-               <a href="../french.html">
+               <a href="../../french.html">
                    <div class="language french">
                         <div class="flag-box">
-                            <img src="../Assets/Images/french-flag.png">
+                            <img src="../../Assets/Images/french-flag.png">
                         </div>
                         <span>French</span>
                     </div>
@@ -95,67 +95,60 @@
 <!-- fast access ends -->
 
 
-    
 <div class="services">
-    <h1> خدماتنا</h1>
-        <div class="services-titles">
-            <a href="../French/services/soins-de-visage.html" class="card">
-                    <img src="../Assets/Images/soins-de-visage.png" alt="">
-                    <h2>Soins de Visage</h2>
-                
-            </a>
-            <a href="../French/services/coloration-sourgils.html" class="card">
-                    <img src="../Assets/Images/coloration-sourgil.png" alt="">
-                    <h2>coloration sourgils </h2>
-                
-            </a>
-            <a href="../French/services/epilation.html" class="card">
-                    <img src="../Assets/Images/epilation.png" alt="">
-                    <h2>Epilation</h2>
-                
-            </a>
-            <a href="../French/services/lashes.html" class="card">
-                    <img src="../Assets/Images/lashes.png" alt="">
-                    <h2>Lashes</h2>
-                
-            </a>
-            <a href="../French/services/make-up.html" class="card">
-                    <img src="../Assets/Images/makiage.png" alt="">
-                    <h2>make up</h2>
-                
-            </a>
-            <a href="../French/services/coiffeur.html" class="card">
-                    <img src="../Assets/Images/coiffeur.png" alt="">
-                    <h2>coiffeur </h2>
-                
-            </a>
-            <a href="../French/services/ongles.html" class="card">
-                    <img src="../Assets/Images/ongles.png" alt="">
-                    <h2>ongles</h2>
-                
-            </a>
-        </div>
+    <h1><span class="pink">coloration </span> sourgils  </h1>
+    <div class="services-titles">
+        <div class="card"> 
+            <img src="../../Assets/Images/service-icon.png" alt=""> 
+            <h2> HARKOUSS</h2>
+            <div class="price">300 DH</div>
+        </div> 
     </div>
+</div>
+
+<div class="reserve-section">
+    <div class="overlay">
+        <h2>المرجو ملأ الخانات التالية</h2>
+            <form name="Exact Reserve (arabic)" action="../success.html" method="POST" data-netlify="true">
+                <input name="اسم الخدمة :" type="hidden" value="coloration sourgils">
+                <input name="نوع الخدمة :" class="exact-service" type="hidden">
+                <label>
+                    <span>الاسم الكامل</span>
+                    <input type="text" name="الاسم الكامل" required>
+                </label>
+                <label>
+                    <span>رقم الهاتف</span>
+                    <input type="number" name="رقم الهاتف" required>
+                </label>
+                <div class="buttons">
+                    <div class="cancel">الغاء</div>
+                    <button type="submit">تاكيد</button> 
+                </div>
+                
+            </form>
+    </div>
+</div>
+
 
 
 <!--footer starts here -->
 <footer> 
     <div class="container">
         <div class="logo">
-            <img src="../Assets/Images/logo-2.png" alt="logo">
+            <img src="../../Assets/Images/logo-2.png" alt="logo">
             <div class="rights"> بينكيوت 2022 كل الحقوق محفوظة ©</div>
         </div>
         <div class="links">
             <div class="other-links">
                 <a class="back-top">العودة للاعلى</a>
                 <a target="_blank" href="https://goo.gl/maps/tV5vwg7SiCawkkjYA">موقعنا</a> 
-                <a href="../french.html">الفرنسية</a> 
+                <a href="../../french.html">الفرنسية</a> 
             </div>
             <div class="page-links">
-                <a href="../index.html">الرئيسية </a>
-                <a href="../Arabic/About.html">حول</a>
-                <a href="../Arabic/Contact.html">تواصل</a>
-                <a href="../Arabic/Services.html">خدمات</a> 
+                <a href="../../index.html">الرئيسية </a>
+                <a href="../../Arabic/About.html">حول</a>
+                <a href="../../Arabic/Contact.html">تواصل</a>
+                <a href="../../Arabic/Services.html">خدمات</a> 
             </div>
         </div>
         <div class="social-media">
@@ -165,9 +158,9 @@
             <a href=""><i class="fa-brands fa-youtube"></i> </a>
         </div>
     </div>
+    
 </footer>
 <!--footer ends here -->
-
-<script src="../Assets/script.js"></script>
+<script src="../../Assets/script.js"></script>
 </body>
 </html>

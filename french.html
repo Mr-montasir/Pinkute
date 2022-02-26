@@ -9,15 +9,17 @@
 
     <!-- Css links are here -->
     <link rel="stylesheet" href="Assets/main.css">
-    <link rel="stylesheet" href="Assets/phone.css">
     <link rel="stylesheet" href="Assets/tablet.css">
+    <link rel="stylesheet" href="Assets/phone.css">
     <link rel="stylesheet" href="French/frStyle.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/38516d3f67.js" crossorigin="anonymous"></script>
 
     <!-- google fonts --> 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
 
 
     <!-- web icon  -->
@@ -26,17 +28,21 @@
 </head>
 <body>
 
+<div class="loading-page">
+    <img src="Assets/Images/loading.jpg" alt="">
+</div>
 <!-- header starts -->
 <header>
 
-    <div class="logo"><img src="Assets/Images/logo-2.png" alt=""></div>
+    <a href="french.html"><div class="logo"><img src="Assets/Images/header-logo.png" alt=""></div></a>
 
     <div class="bar-socialmedia">
         <div class="social-media">
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest-p"></i> 
-            <i class="fab fa-facebook-f"></i>
+            <a href="https://bit.ly/3pe0sx4"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/Pinkcute-salon-106456788636374/"><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="nav-bar">
             <i class="fas bar fa-bars"></i> 
@@ -50,7 +56,7 @@
             <a href="french.html"><i class="fa-solid fa-house"></i>Home</a>
             <a href="French/About.html"><i class="fa-solid fa-circle-info"></i>Qui sommes-nous?</a>
             <a href="French/Contact.html"><i class="fa-solid fa-phone-flip"></i>Contact</a>
-            <a href="French/Services.html"><i class="fa-solid fa-scissors"></i>Services</a>
+            <a href="#services"><i class="fa-solid fa-scissors"></i>Services</a>
 
             <div class="languages">
                 <div class="current"><span>French</span><i class="fa-solid fa-arrow-down"></i></div>
@@ -74,10 +80,11 @@
                 </div>
             </div>
             <div class="nav-social-media">
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-pinterest-p"></i> 
-                <i class="fab fa-facebook-f"></i>
+                <a href="https://bit.ly/3pe0sx4"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/Pinkcute-salon-106456788636374/"><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
             </div>
         </ul>
     </nav> 
@@ -86,20 +93,260 @@
 <!-- header end --> 
 
 
+<!-- fast access starts -->
+<div class="fast-access">
+    <div class="other-icons">
+       <a href="https://bit.ly/3pe0sx4"><i class="fa-brands fa-whatsapp"></i></a>
+       <a href="https://www.messenger.com/t/106456788636374"><i class="fa-brands fa-facebook-messenger"></i></a>
+       <a class="share-button"><i class="fa-solid fa-share-nodes"></i></a>
+    </div>
+    <div class="main-icon"><i class="fa-solid fa-message"></i></div>
+</div>
+<!-- fast access ends -->
+
+
 
 <div class="hero">
     <div class="image">
-        <img src="Assets/Images/Logo.png" alt="">
+        <img src="Assets/Images/logo-3.png" alt="">
     </div>
     <div class="text">
-            <h1><span class="pink">Pinkcute</span>  the woman salon</h1>
-            <p>Pinkcute is a woman salon Pinkcute is a woman salon Pinkcute is a woman salon Pinkcute is a woman salonPinkcute is a woman salon</p>
-            <div class="button">Reserve Now !</div>
+            <h1><span class="pink">Pinkcute</span> le salon de la femme</h1>
+            <p>Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes </p>
     </div>
 </div>
+
+
+<!-- video section starts -->
+<div class="video-section">
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hJ_1vxn8VC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="text">
+        <h1>Pinkcute est un salon </h1>
+        <p>
+            Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes 
+        </p>
+    </div>
+</div>
+<!-- video section ends -->
+
+
+
+
+<div class="services" id="services">
+    <h1> Notre <span class="pink">Services</span></h1>
+        <div class="services-titles">
+            <a href="French/services/soins-de-visage.html" class="card">
+                    <img src="Assets/Images/soins-de-visage.png" alt="">
+                    <h2>Soins de Visage</h2>
+                
+            </a>
+            <a href="French/services/coloration-sourgils.html" class="card">
+                    <img src="Assets/Images/coloration-sourgil.png" alt="">
+                    <h2>coloration sourgils </h2>
+                
+            </a>
+            <a href="French/services/epilation.html" class="card">
+                    <img src="Assets/Images/epilation.png" alt="">
+                    <h2>Epilation</h2>
+                
+            </a>
+            <a href="French/services/lashes.html" class="card">
+                    <img src="Assets/Images/lashes.png" alt="">
+                    <h2>Lashes</h2>
+                
+            </a>
+            <a href="French/services/make-up.html" class="card">
+                    <img src="Assets/Images/makiage.png" alt="">
+                    <h2>make up</h2>
+                
+            </a>
+            <a href="French/services/coiffeur.html" class="card">
+                    <img src="Assets/Images/coiffeur.png" alt="">
+                    <h2>coiffeur </h2>
+                
+            </a>
+            <a href="French/services/ongles.html" class="card">
+                    <img src="Assets/Images/ongles.png" alt="">
+                    <h2>ongles</h2>
+                
+            </a>
+        </div>
+    </div>
  
 
-    
+
+
+<!-- testimonials starts here -->
+
+<h1 class="why-french-title let-appear">Témoignages</h1>
+ 
+<div class="why-french let-appear"> 
+        <div class="arrow-left"><i class="fas fa-caret-left"></i></div>
+        <div class="arrow-right"><i class="fas fa-caret-right"></i></div>
+    <div class="reason-container">
+        <div class="reasons">
+            <div class="reason">
+                <div class="text">
+                    <h2>Nom et Prénom</h2>
+                    <p>
+                        Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes 
+                    </p>
+                    <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+
+                </div>
+                <div class="img-box">
+                    <img src="Assets/Images/customer-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="reason">
+                <div class="text">
+                    <h2>Nom et Prénom</h2>
+                    <p>
+                        Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes 
+                    </p>
+                    <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+
+                </div>
+                <div class="img-box">
+                    <img src="Assets/Images/customer-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="reason">
+                <div class="text">
+                    <h2>Nom et Prénom</h2>
+                    <p>
+                        Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes 
+                    </p>
+                    <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+
+                </div>
+                <div class="img-box">
+                    <img src="Assets/Images/customer-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="reason">
+                <div class="text">
+                    <h2>Nom et Prénom</h4>
+                    <p>
+                        Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes 
+                    </p>
+                    <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+
+                </div>
+                <div class="img-box">
+                    <img src="Assets/Images/customer-4.jpg" alt="">
+                </div>
+            </div>
+            <div class="reason">
+                <div class="text">
+                    <h2>Nom et Prénom</h4>
+                    <p>
+                        Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes Pinkcute est un salon pour femmes 
+                    </p>
+                    <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+
+                </div>
+                <div class="img-box">
+                    <img src="Assets/Images/customer-5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- reserve starts -->
+<div class="reserve" id="reserve">
+    <div class="image"><img src="Assets/Images/reserve.png" alt=""></div>
+    <div class="text">
+        <h1>réserver maintenant</h1>
+        <p>
+            Notre équipe est disponible pour répondre à vos questions sur nos programmes ou votre nouveau parcours professionnel, du lundi au vendredi de 9h00 à 19h00, heure d'Europe centrale.
+        </p>
+        <div class="button"><i class="fa-solid fa-envelope"></i>Fermer</div>
+        <!-- form -->
+        <form name="Reserve (french)" action="French/success.html" method="POST" data-netlify="true">
+            <div class="service-name">
+                <span class="input-title">choisir votre demande</span>
+                <select name="nom de service :" required>
+                    <option >...</option>
+                    <option >SOINS DE VISAGE</option>
+                    <option >EPILATION</option>
+                    <option >COLORATION SOURGILS</option>
+                    <option >LASHES</option>
+                    <option >MAKE UP</option>
+                    <option >COIFFEUR</option>
+                    <option >ONGLES</option>
+                </select>
+            </div>
+            <div class="name">
+                <div class="last-name">
+                    <span class="input-title">Prenom</span>
+                    <input name="Prénom:" placeholder="Prenom" type="text" >
+                </div>
+                <div class="first-name">
+                    <span class="input-title">Nom</span>
+                    <input name="Nom" placeholder="Nom" type="text" >
+                </div>
+            </div>
+            <div class="email">
+                <span class="input-title">Email</span>
+                <input name="Email :" type="email" placeholder="username@email.com">
+            </div>
+            <div class="mobile">
+                <span class="input-title">Numero de telephone</span>
+                <input name="Numero de telephone:" type="text" placeholder="+212" required>
+            </div>
+            <div class="message">
+                <span class="input-title"> Message (optional)</span>
+                <textarea name="Message:" placeholder="Ecriver votre Message ici"></textarea>
+            </div>
+            <input class="submit" type="submit" value="Envoyer">
+        </form>
+    </div>
+</div>
+<!-- reserve ends -->
+
+ 
+
+
+<h1 class="map-title">Visitez Nous Ici</h1>
+<div class="footer-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.9270911526537!2d-5.850204314607451!3d35.75575933348967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55dd3f237c748a85!2zMzXCsDQ1JzIwLjciTiA1wrA1MScwOC42Ilc!5e1!3m2!1sar!2sma!4v1645651585073!5m2!1sar!2sma" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<!--footer starts here -->
+<footer> 
+    <div class="container">
+        <div class="logo">
+            <img src="Assets/Images/logo-2.png" alt="logo">
+            <div class="rights">© pinkcute 2022 all rights reserved </div>
+        </div>
+        <div class="links">
+            <div class="page-links">
+                <a href="index.html">Home </a>
+                <a href="Arabic/About.html">About</a>
+                <a href="Arabic/Contact.html">contact</a>
+                <a href="Arabic/Services.html">services</a> 
+            </div>
+            <div class="other-links">
+                <a class="back-top">Retour au sommet</a>
+                <a target="_blank" href="https://goo.gl/maps/tV5vwg7SiCawkkjYA">Localisation</a> 
+                <a href="index.html">Arabic</a> 
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="https://bit.ly/3pe0sx4"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-instagram"></i> </a>
+            <a href="https://www.facebook.com/Pinkcute-salon-106456788636374/"><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i> </a>
+        </div>
+    </div>
+</footer>
+<!--footer ends here -->
+
+
 <script src="Assets/script.js"></script>
 </body>
 </html>
